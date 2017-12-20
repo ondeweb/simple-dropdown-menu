@@ -1,0 +1,42 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"> 
+<html>
+	<head>
+		<title>simple dropdown menu with CSS (non responsive)</title>
+		<style type="text/css" media="screen">
+			* {margin: 0px; padding: 0px; font: 15px Helvetica, Arial, sans-serif; color: #FFF;}
+			nav {margin: 50px;}
+			ul {list-style: none;}
+			ul li {float: left; padding: 1px; position: relative;}
+			ul a {display: table-cell; vertical-align: middle; width: 100px; height: 50px; background: #6645cc; text-decoration: none; text-align: center;}
+			ul a:hover {background: #666;}
+			li > ul {display: none; position: absolute; left: 0px; top: 100%; padding-top: 1px;}
+			li:hover > ul {display: block;}
+			li > ul li {padding-top: 1px; top: 0px; padding-left: 1px; width: 100px;}
+			li > ul li > ul {left: 100%; top: 0px; padding-left: 0px;}			
+			li:hover > a {background: #666;}
+		</style>
+	</head>
+	<body>
+	<nav>	
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Web</a>
+				<ul>
+					<li><a href="#">Develop</a></li>
+					<li><a href="#">Register</a></li>
+					<li><a href="#">Host</a>				
+						<ul>
+							<li><a href="#">Linux</a></li>
+							<li><a href="#">Windows</a></li>
+							<li><a href="#">Cloud</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Service</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Contact</a></li>	
+		</ul>
+		</nav>
+	</body>
+</html>
